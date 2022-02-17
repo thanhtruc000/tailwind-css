@@ -1,0 +1,23 @@
+Step1:
+- Install Node JS
+- Install npm: npm install -g
+- Open Visual Code install extensions Tailwind Css IntelliSense
+
+Step2:
+Open Terminal: 
+- npm init -y
+- npm install -D tailwindcss postcss autoprefixer vite
+- npx tailwindcss init -p
+- npx tailwindcss-cli build css/tailwind.css -o build/tailwind.css
+- npm run dev
+
+Step3:
+Click package.json
+- "test" => "dev" 
+- "echo \"Error: no test specified\" && exit 1" => "vite"
+
+Step4: 
+Add  <link rel="stylesheet" href="./build//tailwind.css" /> in file index.html
+
+NOTE:
+When change style, run " npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch" again
